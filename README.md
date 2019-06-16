@@ -40,4 +40,4 @@ A sample code of how to use Eigen (C++ linear algebra template headers) in Intel
 7. Remember to `make clean` before switching build mode
 
 ## How to Use Eigen in any SGX Projects
-Copy `Enclave/shim.hpp` to your project. Make sure `shim.hpp`, `Eigen`, and the files listed in step 3 are all visible during compilation. Any time an Eigen header is `#include`'d in a file, make sure to include `shim.hpp` *above* it to expose the fake `std` classes. 
+Copy `Include/shim.hpp` to your project. Make sure `shim.hpp`, `Eigen`, and the files listed in step 3 are all visible during compilation. Any time an Eigen header is `#include`'d in a file, make sure to include `shim.hpp` *above* it to expose the fake `std` classes. 
