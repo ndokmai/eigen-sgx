@@ -1,0 +1,9 @@
+*.o
+*.so
+.config*
+app
+App/Enclave_u.*
+Enclave/Enclave_t.*
+Include/Eigen
+Include/intrinsic/*
+
