@@ -56,6 +56,6 @@ int printf(const char* fmt, ...)
 void ecall_matmul() {
     Vector3d v(1,2,3);
     Vector3d w(0,1,2);
-    double dp = v.adjoint()*w; // automatic conversion of the inner product to a scalar
-    printf("output: %lf\n", dp);
+    double dp = v.adjoint()*w;
+    printf("Dot product output: %lf\n", dp);
 }

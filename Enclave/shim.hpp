@@ -2,13 +2,16 @@
 #define SHIM_HPP
 
 #include <string>
+#include <sgx_trts.h>
 
 namespace std {
 class streamsize {
 };
 
 int rand() {
-    return 0;
+    int buff = 0;
+    sgx_read_rand((unsigned char *)&buff, sizeof(buff));
+    return buff;
 }
 
 class ostream {
